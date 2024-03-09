@@ -1,0 +1,29 @@
+#ifndef TUNDEFINES_H
+#define TUNDEFINES_H
+
+#include <stdint.h>
+
+
+
+typedef enum TuResult{
+    TU_SUCCESS = 0,
+    TU_FAILED = 1,
+    TU_FAILED_TO_OPEN_INTERFACE = 2,
+    TU_FAILED_TO_SETUP_INTERFACE = 3,
+    TU_INTERFACE_NOT_FOUND = 4,
+    TU_FAILED_TO_CREATE_SOCKET = 5,
+    TU_FAILED_TO_RESERVE_SOCKET = 6,
+    TU_FAILED_TO_BIND_ADDRESS_INFO_TO_SOCKET = 7,
+    TU_FAILED_TO_CONVERT_SOCKET_ADDRESS = 8,
+    TU_FAILED_TO_CONNECT_SOCKET = 9,
+    TU_FAILED_TO_ACCEPT = 10
+} TuResult;
+
+typedef enum TuBool{
+   TU_TRUE = 1,
+    TU_FALSE = 0
+} TuBool;
+
+typedef uint64_t TuSize;
+
+#endif // TUNDEFINES_H
